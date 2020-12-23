@@ -10,19 +10,19 @@
    <?php
     abstract class Account{
         public $name;
-        public $adress;
+        public $address;
         public $balance;
-        function __construct($name,$adress,$balance)
+        function __construct($name,$address,$balance)
         {
             $this->name=$name;
-            $this->adress=$adress;
+            $this->adress=$address;
             $this->balance=$balance;
         }
        
         function printDetails(){
             echo "<h2>All Bank Account Details<br></h2>";
             echo "Name: ",$this->name."<br>";
-            echo "Adress: ",$this->adress."<br>";
+            echo "Address: ",$this->adress."<br>";
             echo "Balance: ",$this->balance."<br>";
             
         }
